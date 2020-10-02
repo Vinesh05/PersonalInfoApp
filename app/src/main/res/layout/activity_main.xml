@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ContentDescription">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgLightCircle"
+            android:layout_width="1000dp"
+            android:layout_height="700dp"
+            android:src="@drawable/light_circle"
+            android:layout_marginTop="-450dp"
+            android:layout_marginStart="-400dp"
+            tools:viewBindingIgnore="true"/>
+
+        <ImageView
+            android:id="@+id/imgDarkCircle"
+            android:layout_width="900dp"
+            android:layout_height="700dp"
+            android:src="@drawable/dark_circle"
+            android:layout_marginTop="-525dp"
+            android:layout_marginEnd="-350dp"
+            android:alpha="0.7"
+            tools:viewBindingIgnore="true"/>
+
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/main_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
+            tools:viewBindingIgnore="true" />
+
+        <ImageView
+            android:id="@+id/editMenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/edit"
+            android:layout_margin="30dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgLightCircle"
+            android:layout_marginTop="-60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border"
+            app:cardCornerRadius="25dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_add"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/border"
+            android:layout_below="@id/imgLightCircle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-65dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardImage"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp">
+
+                <ImageView
+                    android:id="@+id/nameSmallCircle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/small_circle"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/name"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/nameSmallCircle"
+                    android:layout_marginStart="30dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp">
+
+                <ImageView
+                    android:id="@+id/dobSmallCircle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/small_circle"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/date"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txtDob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dob"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/dobSmallCircle"
+                    android:layout_marginStart="30dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp">
+
+                <ImageView
+                    android:id="@+id/numSmallCircle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/small_circle"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/phone_number"
+                    android:padding="7dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txtPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/numSmallCircle"
+                    android:layout_marginStart="30dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp">
+
+                <ImageView
+                    android:id="@+id/emailSmallCircle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/small_circle"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/email"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txtEmailAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/emailSmallCircle"
+                    android:layout_marginStart="30dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp">
+
+                <ImageView
+                    android:id="@+id/jobSmallCircle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/small_circle"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/job"
+                    android:padding="7dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/txtJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/jobSmallCircle"
+                    android:layout_marginStart="30dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

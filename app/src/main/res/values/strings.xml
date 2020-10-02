@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Personal Info</string>
+    <string name="main_title">Information</string>
+    <string name="name">Name</string>
+    <string name="dob">11/11/1111</string>
+    <string name="email">email@gmail.com</string>
+    <string name="number">0123456789</string>
+    <string name="edit">Edit</string>
+    <string name="image">Image</string>
+    <string name="browse">Browse</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="job">Job</string>
+    <string name="done">Done</string>
+    <string name="preference_file_name">Personal Information Preferences</string>
+    <string name="cancel">Cancel</string>
+</resources>

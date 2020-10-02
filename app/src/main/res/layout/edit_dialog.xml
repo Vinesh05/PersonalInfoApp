@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/edit"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp"
+        android:layout_margin="30dp"
+        tools:viewBindingIgnore="true"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="@string/name"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no"
+        android:maxLines="1"/>
+
+    <LinearLayout
+        android:id="@+id/etDateOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="4dp"
+            android:hint="@string/date_of_birth"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="#707070"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="@string/phone_number"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/etEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="@string/email_address"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/etJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="@string/job"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:importantForAutofill="no"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_background"/>
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_background"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
