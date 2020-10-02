@@ -94,7 +94,8 @@
                     android:id="@+id/nameSmallCircle"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/small_circle"/>
+                    android:src="@drawable/small_circle"
+                    android:layout_centerVertical="true"/>
 
                 <ImageView
                     android:layout_width="50dp"
@@ -124,7 +125,8 @@
                     android:id="@+id/dobSmallCircle"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/small_circle"/>
+                    android:src="@drawable/small_circle"
+                    android:layout_centerVertical="true"/>
 
                 <ImageView
                     android:layout_width="50dp"
@@ -156,7 +158,8 @@
                     android:id="@+id/numSmallCircle"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/small_circle"/>
+                    android:src="@drawable/small_circle"
+                    android:layout_centerVertical="true"/>
 
                 <ImageView
                     android:layout_width="50dp"
@@ -187,7 +190,8 @@
                     android:id="@+id/emailSmallCircle"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/small_circle"/>
+                    android:src="@drawable/small_circle"
+                    android:layout_centerVertical="true"/>
 
                 <ImageView
                     android:layout_width="50dp"
@@ -217,7 +221,8 @@
                     android:id="@+id/jobSmallCircle"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/small_circle"/>
+                    android:src="@drawable/small_circle"
+                    android:layout_centerVertical="true"/>
 
                 <ImageView
                     android:layout_width="50dp"
